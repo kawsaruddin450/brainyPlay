@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProviders";
+import { FaGoogle } from "react-icons/fa";
 
 
 const Register = () => {
-    const {register, loading} = useContext(AuthContext);
+    const { register, googleLogin } = useContext(AuthContext);
 
     const handleRegister = event => {
         event.preventDefault();
@@ -14,16 +15,18 @@ const Register = () => {
         const password = form.password.value;
 
         console.log(name, email, password)
-        register(email, password)
-        .then(result => {
-            const user = result.user;
-            console.log(user);
-        })
-        .catch(error => {
-            console.log(error);
-        })
+        register(name, email, password);
     }
 
+    const handleGoogleSignIn = () => {
+        googleLogin()
+        .then(result => {
+            const user = result.usr;
+            console.log(user);
+        }).catch(error => {
+            console.log(error.code);
+        })
+    }
     return (
         <div className="hero bg-base-200 min-h-screen">
             <div className="hero-content flex-col">
@@ -46,6 +49,10 @@ const Register = () => {
                         </div>
                         <div className="form-control mt-6">
                             <input type="submit" value="Register" className="btn bg-orange-500 hover:bg-orange-600 text-white" />
+                        </div>
+                        <div className="divider">OR</div>
+                        <div className="text-center">
+                            <button onClick={handleGoogleSignIn} className="btn btn-circle btn-outline text-orange-500 hover:bg-orange-500 hover:border-0"><FaGoogle></FaGoogle></button>
                         </div>
                     </form>
                 </div>
