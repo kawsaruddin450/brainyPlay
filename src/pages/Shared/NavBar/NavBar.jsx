@@ -4,7 +4,16 @@ import { useContext } from 'react';
 import { AuthContext } from '../../../providers/AuthProviders';
 
 const NavBar = () => {
-    const {user} = useContext(AuthContext);
+    const {user, logOut} = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+        .then(() => {
+            console.log("log Out successful");
+        }).catch(error => {
+            console.log(error.code);
+        })
+    }
     const navItems = <>
         <li><Link to='/'>Home</Link></li>
         <li><a>All Toys</a></li>
@@ -49,7 +58,11 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-end">
                     <img src={profile} alt="User Profile" width={40} height={40} />
-                    <Link to='/login' className="ml-5 btn bg-orange-500 hover:bg-orange-600 text-white">Login</Link>
+                    {
+                        user ?
+                        <button onClick={handleLogOut} className="ml-5 btn bg-orange-500 hover:bg-orange-600 text-white">Log Out</button>
+                        : <Link to='/login' className="ml-5 btn bg-orange-500 hover:bg-orange-600 text-white">Login</Link>
+                    }
                 </div>
             </div>
         </div>
