@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'nerko': ["Nerko One", 'cursive']
+    }
   },
   plugins: [
     // eslint-disable-next-line
