@@ -1,4 +1,5 @@
 import background from '../../../assets/homebanner.jpg'
+import Shop from '../Shop/Shop';
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Shop></Shop>
         </div>
     );
 };
