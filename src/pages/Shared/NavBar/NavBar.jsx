@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 import profile from '../../../assets/user.png';
+import { useContext } from 'react';
+import { AuthContext } from '../../../providers/AuthProviders';
 
 const NavBar = () => {
+    const {user} = useContext(AuthContext);
+    console.log(user);
     const navItems = <>
         <li><Link to='/'>Home</Link></li>
         <li><a>All Toys</a></li>
