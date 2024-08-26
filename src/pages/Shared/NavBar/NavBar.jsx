@@ -50,7 +50,7 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-end">
                     <img src={profile} alt="User Profile" width={40} height={40} />
-                    <a className="ml-5 btn bg-orange-500 hover:bg-orange-600 text-white">Login</a>
+                    <Link to='/login' className="ml-5 btn bg-orange-500 hover:bg-orange-600 text-white">Login</Link>
                 </div>
             </div>
         </div>
