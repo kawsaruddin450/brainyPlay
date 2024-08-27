@@ -51,7 +51,7 @@ const Shop = () => {
     }
 
     useEffect(() => {
-        fetch('/toys.json')
+        fetch('http://localhost:5000/toys')
             .then(res => res.json())
             .then(data => {
                 setAllToys(data);
@@ -85,7 +85,7 @@ const Shop = () => {
                     <div className='mt-8 lg:container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
                         {
                             toys.map(toy => <ToyCard
-                                key={toy.id}
+                                key={toy._id}
                                 toy={toy}
                             ></ToyCard>)
                         }
@@ -96,7 +96,7 @@ const Shop = () => {
                     <div className='mt-8 lg:container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
                         {
                             toys.map(toy => <ToyCard
-                                key={toy.id}
+                                key={toy._id}
                                 toy={toy}
                             ></ToyCard>)
                         }
@@ -107,7 +107,7 @@ const Shop = () => {
                     <div className='mt-8 lg:container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
                         {
                             toys.map(toy => <ToyCard
-                                key={toy.id}
+                                key={toy._id}
                                 toy={toy}
                             ></ToyCard>)
                         }
@@ -118,7 +118,7 @@ const Shop = () => {
                     <div className='mt-8 lg:container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
                         {
                             toys.map(toy => <ToyCard
-                                key={toy.id}
+                                key={toy._id}
                                 toy={toy}
                             ></ToyCard>)
                         }
@@ -129,7 +129,7 @@ const Shop = () => {
                     <div className='mt-8 lg:container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
                         {
                             toys.map(toy => <ToyCard
-                                key={toy.id}
+                                key={toy._id}
                                 toy={toy}
                             ></ToyCard>)
                         }
@@ -140,7 +140,7 @@ const Shop = () => {
                     <div className='mt-8 lg:container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
                         {
                             toys.map(toy => <ToyCard
-                                key={toy.id}
+                                key={toy._id}
                                 toy={toy}
                             ></ToyCard>)
                         }
@@ -151,7 +151,7 @@ const Shop = () => {
                     <div className='mt-8 lg:container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
                         {
                             toys.map(toy => <ToyCard
-                                key={toy.id}
+                                key={toy._id}
                                 toy={toy}
                             ></ToyCard>)
                         }
@@ -162,7 +162,7 @@ const Shop = () => {
                     <div className='mt-8 lg:container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
                         {
                             toys.map(toy => <ToyCard
-                                key={toy.id}
+                                key={toy._id}
                                 toy={toy}
                             ></ToyCard>)
                         }
@@ -173,7 +173,7 @@ const Shop = () => {
                     <div className='mt-8 lg:container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
                         {
                             toys.map(toy => <ToyCard
-                                key={toy.id}
+                                key={toy._id}
                                 toy={toy}
                             ></ToyCard>)
                         }
@@ -184,7 +184,7 @@ const Shop = () => {
                     <div className='mt-8 lg:container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
                         {
                             toys.map(toy => <ToyCard
-                                key={toy.id}
+                                key={toy._id}
                                 toy={toy}
                             ></ToyCard>)
                         }

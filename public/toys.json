@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "LEGO Mindstorms",
         "category": "STEM",
         "recommended_age": "10+",
@@ -11,7 +10,6 @@
         "quantity": 15
     },
     {
-        "id": 2,
         "name": "Osmo Genius Kit",
         "category": "Interactive Learning",
         "recommended_age": "5-12",
@@ -22,7 +20,6 @@
         "quantity": 30
     },
     {
-        "id": 3,
         "name": "Melissa & Doug Abacus",
         "category": "Mathematics",
         "recommended_age": "3+",
@@ -33,7 +30,6 @@
         "quantity": 50
     },
     {
-        "id": 4,
         "name": "Snap Circuits",
         "category": "Engineering",
         "recommended_age": "8+",
@@ -44,7 +40,6 @@
         "quantity": 20
     },
     {
-        "id": 5,
         "name": "ThinkFun Gravity Maze",
         "category": "Logic",
         "recommended_age": "8+",
@@ -55,7 +50,6 @@
         "quantity": 35
     },
     {
-        "id": 6,
         "name": "K’NEX Education STEM Explorations",
         "category": "Engineering",
         "recommended_age": "8-14",
@@ -66,7 +60,6 @@
         "quantity": 25
     },
     {
-        "id": 7,
         "name": "Tegu Magnetic Wooden Blocks",
         "category": "Building",
         "recommended_age": "1+",
@@ -77,7 +70,6 @@
         "quantity": 40
     },
     {
-        "id": 8,
         "name": "LeapFrog LeapStart",
         "category": "Interactive Learning",
         "recommended_age": "2-7",
@@ -88,7 +80,6 @@
         "quantity": 45
     },
     {
-        "id": 9,
         "name": "Magna-Tiles",
         "category": "Building",
         "recommended_age": "3+",
@@ -99,7 +90,6 @@
         "quantity": 25
     },
     {
-        "id": 10,
         "name": "Melissa & Doug See & Spell",
         "category": "Language",
         "recommended_age": "4-7",
@@ -110,7 +100,6 @@
         "quantity": 30
     },
     {
-        "id": 11,
         "name": "Fisher-Price Code-a-Pillar",
         "category": "Science",
         "recommended_age": "3-6",
@@ -121,7 +110,6 @@
         "quantity": 20
     },
     {
-        "id": 12,
         "name": "Kid O Myland Horse",
         "category": "STEM",
         "recommended_age": "2-5",
@@ -132,7 +120,6 @@
         "quantity": 15
     },
     {
-        "id": 13,
         "name": "VTech Touch and Learn Activity Desk",
         "category": "Interactive Learning",
         "recommended_age": "2-5",
@@ -143,7 +130,6 @@
         "quantity": 25
     },
     {
-        "id": 14,
         "name": "Schleich Animal Figurines",
         "category": "Science",
         "recommended_age": "3+",
@@ -154,7 +140,6 @@
         "quantity": 50
     },
     {
-        "id": 15,
         "name": "Green Toys Shape Sorter",
         "category": "Cognitive Development",
         "recommended_age": "6 months+",
@@ -165,7 +150,6 @@
         "quantity": 35
     },
     {
-        "id": 16,
         "name": "Learning Resources Botley the Coding Robot",
         "category": "Logic",
         "recommended_age": "5-9",
@@ -176,7 +160,6 @@
         "quantity": 20
     },
     {
-        "id": 17,
         "name": "Bananagrams",
         "category": "Language",
         "recommended_age": "7+",
@@ -187,7 +170,6 @@
         "quantity": 40
     },
     {
-        "id": 18,
         "name": "Play-Doh Shape and Learn Letters and Language",
         "category": "Language",
         "recommended_age": "3+",
@@ -198,7 +180,6 @@
         "quantity": 35
     },
     {
-        "id": 19,
         "name": "Melissa & Doug Geometric Stacker",
         "category": "Cognitive Development",
         "recommended_age": "2+",
@@ -209,7 +190,6 @@
         "quantity": 30
     },
     {
-        "id": 20,
         "name": "SmartLab Toys Squishy Human Body",
         "category": "Science",
         "recommended_age": "8+",
@@ -220,7 +200,6 @@
         "quantity": 20
     },
     {
-        "id": 21,
         "name": "ThinkFun Rush Hour",
         "category": "Logic",
         "recommended_age": "8+",
@@ -231,7 +210,6 @@
         "quantity": 35
     },
     {
-        "id": 22,
         "name": "Fat Brain Toys Dimpl",
         "category": "Cognitive Development",
         "recommended_age": "10 months+",
@@ -242,7 +220,6 @@
         "quantity": 40
     },
     {
-        "id": 23,
         "name": "Ravensburger Labyrinth",
         "category": "Logic",
         "recommended_age": "7+",
@@ -253,7 +230,6 @@
         "quantity": 25
     },
     {
-        "id": 24,
         "name": "Hape Pound & Tap Bench",
         "category": "Interactive Learning",
         "recommended_age": "12 months+",
@@ -264,7 +240,6 @@
         "quantity": 30
     },
     {
-        "id": 25,
         "name": "Educational Insights GeoSafari Jr. Talking Microscope",
         "category": "Science",
         "recommended_age": "5-7",
@@ -275,7 +250,6 @@
         "quantity": 20
     },
     {
-        "id": 26,
         "name": "Thames & Kosmos Chemistry C500",
         "category": "Science",
         "recommended_age": "10+",
@@ -286,7 +260,6 @@
         "quantity": 15
     },
     {
-        "id": 27,
         "name": "Crayola Color Chemistry Set",
         "category": "Science",
         "recommended_age": "7+",
@@ -297,7 +270,6 @@
         "quantity": 25
     },
     {
-        "id": 28,
         "name": "Little Tikes STEM Jr. Wonder Lab",
         "category": "STEM",
         "recommended_age": "2-5",
@@ -308,7 +280,6 @@
         "quantity": 20
     },
     {
-        "id": 29,
         "name": "Fisher-Price Laugh & Learn Smart Stages Piggy Bank",
         "category": "Interactive Learning",
         "recommended_age": "6-36 months",
@@ -319,7 +290,6 @@
         "quantity": 35
     },
     {
-        "id": 30,
         "name": "Catan Junior",
         "category": "Logic",
         "recommended_age": "6+",
