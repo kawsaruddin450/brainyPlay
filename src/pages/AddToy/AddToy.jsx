@@ -1,13 +1,14 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProviders';
+import Swal from 'sweetalert2';
 
 const AddToy = () => {
-    const {user} = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
 
     const handleAddToy = event => {
         event.preventDefault();
         const form = event.target;
-        
+
         const seller = form.seller.value;
         const email = form.email.value;
         const name = form.name.value;
@@ -30,6 +31,24 @@ const AddToy = () => {
             description,
         }
         console.log(toy);
+
+        fetch('http://localhost:5000/addtoys', {
+            method: "POST",
+            headers: {
+                "content-type": "application/json",
+            },
+            body: JSON.stringify(toy)
+        }).then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: "Congratulations!",
+                        text: "Toy Added Successfully.",
+                        icon: "success"
+                    });
+                    form.reset();
+                }
+            });
     }
 
     return (
