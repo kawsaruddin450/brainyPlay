@@ -1,9 +1,10 @@
 import { FaRegStar, FaStar } from "react-icons/fa";
 import Rating from "react-rating";
+import { Link } from "react-router-dom";
 
 
 const ToyCard = ({ toy }) => {
-    const { name, id, category, description, image, price, rating, quantity } = toy;
+    const {_id, name, id, category, description, image, price, rating, quantity } = toy;
     return (
         <div className="card bg-base-100 shadow-xl">
             <figure>
@@ -32,7 +33,7 @@ const ToyCard = ({ toy }) => {
                     </p>
                 </div>
                 <div className="card-actions justify-end">
-                    <button className="btn bg-orange-500 hover:bg-orange-600 text-white border-0">View Details</button>
+                    <Link to={`toys/${_id}`} className="btn bg-orange-500 hover:bg-orange-600 text-white border-0">View Details</Link>
                 </div>
             </div>
         </div>

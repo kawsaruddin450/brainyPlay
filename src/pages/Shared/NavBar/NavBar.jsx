@@ -17,7 +17,9 @@ const NavBar = () => {
     const navItems = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/alltoys'>All Toys</Link></li>
-        <li><a>My Toys</a></li>
+        {
+            user && <li><Link to='/mytoys'>My Toys</Link></li>
+        }
         <li><a>Blogs</a></li>
     </>
     return (
