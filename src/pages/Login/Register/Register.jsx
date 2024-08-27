@@ -8,6 +8,7 @@ const Register = () => {
     const { register, googleLogin } = useContext(AuthContext);
 
 
+
     const handleRegister = event => {
         event.preventDefault();
         const form = event.target;
@@ -22,7 +23,7 @@ const Register = () => {
     const handleGoogleSignIn = () => {
         googleLogin()
         .then(result => {
-            const user = result.usr;
+            const user = result.user;
             console.log(user);
         }).catch(error => {
             console.log(error.code);
