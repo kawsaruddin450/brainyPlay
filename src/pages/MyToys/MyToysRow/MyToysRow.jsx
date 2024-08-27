@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdDelete } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const MyToysRow = ({toy, handleDelete}) => {
     const {_id, name, seller, email, category, rating, description, quantity, price, image} = toy;
@@ -32,7 +33,7 @@ const MyToysRow = ({toy, handleDelete}) => {
             </td>
             <td>${price}</td>
             <th>
-                <button className="btn btn-ghost btn-xs">update</button>
+                <Link to={`/update/${_id}`} className="btn btn-ghost btn-xs">update</Link>
             </th>
         </tr>
     );
