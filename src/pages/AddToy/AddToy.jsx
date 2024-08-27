@@ -15,7 +15,7 @@ const AddToy = () => {
         const category = form.category.value;
         const quantity = form.quantity.value;
         const price = form.price.value;
-        const rating = form.rating.vlaue;
+        const rating = form.rating.value;
         const image = form.image.value;
         const description = form.description.value;
 
