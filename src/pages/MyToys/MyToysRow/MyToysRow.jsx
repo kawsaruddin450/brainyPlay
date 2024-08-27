@@ -1,12 +1,13 @@
 import React from 'react';
+import { MdDelete } from 'react-icons/md';
 
-const MyToysRow = ({toy}) => {
+const MyToysRow = ({toy, handleDelete}) => {
     const {_id, name, seller, email, category, rating, description, quantity, price, image} = toy;
     return (
         <tr>
             <th>
                 <label>
-                    <input type="checkbox" className="checkbox" />
+                    <button onClick={()=> handleDelete(_id)} className='btn btn-circle btn-sm text-xl'><MdDelete></MdDelete></button>
                 </label>
             </th>
             <td>
