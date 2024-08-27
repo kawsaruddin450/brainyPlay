@@ -4,19 +4,19 @@ import { useContext } from 'react';
 import { AuthContext } from '../../../providers/AuthProviders';
 
 const NavBar = () => {
-    const {user, logOut} = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
 
     const handleLogOut = () => {
         logOut()
-        .then(() => {
-            console.log("log Out successful");
-        }).catch(error => {
-            console.log(error.code);
-        })
+            .then(() => {
+                console.log("log Out successful");
+            }).catch(error => {
+                console.log(error.code);
+            })
     }
     const navItems = <>
         <li><Link to='/'>Home</Link></li>
-        <li><a>All Toys</a></li>
+        <li><Link to='/alltoys'>All Toys</Link></li>
         <li><a>My Toys</a></li>
         <li><a>Blogs</a></li>
     </>
@@ -60,8 +60,11 @@ const NavBar = () => {
                     <img src={profile} alt="User Profile" width={40} height={40} />
                     {
                         user ?
-                        <button onClick={handleLogOut} className="ml-5 btn bg-orange-500 hover:bg-orange-600 text-white">Log Out</button>
-                        : <Link to='/login' className="ml-5 btn bg-orange-500 hover:bg-orange-600 text-white">Login</Link>
+                            <>
+                                <Link to='addtoys' className="ml-5 btn btn-outline text-orange-500 hover:bg-orange-500">Add a Toy</Link>
+                                <button onClick={handleLogOut} className="ml-5 btn bg-orange-500 hover:bg-orange-600 text-white">Log Out</button>
+                            </>
+                            : <Link to='/login' className="ml-5 btn bg-orange-500 hover:bg-orange-600 text-white">Login</Link>
                     }
                 </div>
             </div>
