@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProviders";
 import { FaGoogle } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 
 const Register = () => {
@@ -22,15 +23,18 @@ const Register = () => {
 
     const handleGoogleSignIn = () => {
         googleLogin()
-        .then(result => {
-            const user = result.user;
-            console.log(user);
-        }).catch(error => {
-            console.log(error.code);
-        })
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            }).catch(error => {
+                console.log(error.code);
+            })
     }
     return (
         <div className="hero bg-base-200 min-h-screen">
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <div className="hero-content flex-col">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Register now!</h1>

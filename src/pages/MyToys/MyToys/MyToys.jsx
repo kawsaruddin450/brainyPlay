@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../../providers/AuthProviders';
 import MyToysRow from '../MyToysRow/MyToysRow';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
@@ -50,6 +51,9 @@ const MyToys = () => {
     }
     return (
         <div className='lg:container mx-auto'>
+            <Helmet>
+                <title>BrainyPlay - My Toys</title>
+            </Helmet>
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}

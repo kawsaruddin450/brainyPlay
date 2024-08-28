@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import background from '../../../assets/homebanner.jpg'
 import Features from '../Features/Features';
 import Gallery from '../Gallery/Gallery';
@@ -6,6 +7,9 @@ import Shop from '../Shop/Shop';
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>BrainyPlay - Home</title>
+            </Helmet>
             <div className="">
                 <div
                     className="hero min-h-screen"

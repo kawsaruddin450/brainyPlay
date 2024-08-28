@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProviders';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 
 const AddToy = () => {
     const { user } = useContext(AuthContext);
@@ -53,6 +54,9 @@ const AddToy = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>BrainyPlay - Add a Toy</title>
+            </Helmet>
             <div className="hero bg-base-200 min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center">
