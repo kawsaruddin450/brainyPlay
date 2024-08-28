@@ -8,45 +8,44 @@ const Shop = () => {
     const [AllToys, setAllToys] = useState([]);
     const [toys, setToys] = useState(AllToys);
 
+    const handleCategories = category => {
+        fetch(`http://localhost:5000/categories/${category}`)
+        .then(res => res.json())
+        .then(data => {
+            setToys(data);
+        })
+    }
+
     const filterCategory = (index) => {
         if (index === 0) {
             setToys(AllToys);
         }
         else if (index === 1) {
-            const newToys = toys.filter(toy => toy.category === "Science")
-            setToys(newToys);
+            handleCategories("Science");
         }
         else if (index === 2) {
-            const newToys = toys.filter(toy => toy.category === "Language")
-            setToys(newToys);
+            handleCategories("Language");
         }
         else if (index === 3) {
-            const newToys = toys.filter(toy => toy.category === "Engineering")
-            setToys(newToys);
+            handleCategories("Engineering");
         }
         else if (index === 4) {
-            const newToys = toys.filter(toy => toy.category === "STEM")
-            setToys(newToys);
+            handleCategories("STEM");
         }
         else if (index === 5) {
-            const newToys = toys.filter(toy => toy.category === "Mathematics")
-            setToys(newToys);
+            handleCategories("Mathematics");
         }
         else if (index === 6) {
-            const newToys = toys.filter(toy => toy.category === "Interactive Learning")
-            setToys(newToys);
+            handleCategories("Interactive Learning");
         }
         else if (index === 7) {
-            const newToys = toys.filter(toy => toy.category === "Logic")
-            setToys(newToys);
+            handleCategories("Logic");
         }
         else if (index === 8) {
-            const newToys = toys.filter(toy => toy.category === "Cognitive Development")
-            setToys(newToys);
+            handleCategories("Cognitive Development");
         }
         else if (index === 9) {
-            const newToys = toys.filter(toy => toy.category === "Building")
-            setToys(newToys);
+            handleCategories("Building");
         }
     }
 
