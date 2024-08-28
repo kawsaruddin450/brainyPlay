@@ -20,7 +20,7 @@ const NavBar = () => {
         {
             user && <li><Link to='/mytoys'>My Toys</Link></li>
         }
-        <li><a>Blogs</a></li>
+        <li><Link to='/blogs'>Blogs</Link></li>
     </>
     return (
         <div className='lg:container mx-auto py-5'>
