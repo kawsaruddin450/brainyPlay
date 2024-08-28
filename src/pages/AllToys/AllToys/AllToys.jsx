@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ToyRow from "../ToyRow/ToyRow";
 import { Helmet } from "react-helmet";
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 
 const AllToys = () => {
@@ -12,7 +13,13 @@ const AllToys = () => {
             .then(data => setToys(data));
     }, [])
 
-    console.log(toys);
+    const handleSorting = dir => {
+        fetch(`http://localhost:5000/toys/sorted?sort=${dir}`)
+        .then(res => res.json())
+        .then(data => {
+            setToys(data);
+        })
+    }
 
     return (
         <div className="lg:container mx-auto">
@@ -27,7 +34,13 @@ const AllToys = () => {
                             <th>Name</th>
                             <th>Availability</th>
                             <th>Seller</th>
-                            <th>Price</th>
+                            <th className="flex justify-around items-center">
+                                <p>Price</p>
+                                <p>
+                                    <button onClick={()=> handleSorting(1)} className="block"><IoMdArrowDropup></IoMdArrowDropup></button>
+                                    <button onClick={()=> handleSorting(0)} className="inline"><IoMdArrowDropdown></IoMdArrowDropdown></button>
+                                </p>
+                            </th>
                             <th></th>
                         </tr>
                     </thead>
