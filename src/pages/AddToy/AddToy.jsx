@@ -33,7 +33,7 @@ const AddToy = () => {
         }
         console.log(toy);
 
-        fetch('http://localhost:5000/addtoys', {
+        fetch('https://brainy-play-server.vercel.app/addtoys', {
             method: "POST",
             headers: {
                 "content-type": "application/json",

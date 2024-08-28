@@ -9,7 +9,7 @@ const Shop = () => {
     const [toys, setToys] = useState(AllToys);
 
     const handleCategories = category => {
-        fetch(`http://localhost:5000/categories/${category}`)
+        fetch(`https://brainy-play-server.vercel.app/categories/${category}`)
         .then(res => res.json())
         .then(data => {
             setToys(data);
@@ -50,7 +50,7 @@ const Shop = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/toys')
+        fetch('https://brainy-play-server.vercel.app/toys')
             .then(res => res.json())
             .then(data => {
                 setAllToys(data);

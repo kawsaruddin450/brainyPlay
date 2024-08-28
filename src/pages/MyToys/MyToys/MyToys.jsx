@@ -10,7 +10,7 @@ const MyToys = () => {
     const [toys, setToys] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/mytoys?email=${email}`)
+        fetch(`https://brainy-play-server.vercel.app/mytoys?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 setToys(data);
@@ -28,7 +28,7 @@ const MyToys = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/toys/${id}`, {
+                fetch(`https://brainy-play-server.vercel.app/toys/${id}`, {
                     method: "DELETE",
                 })
                     .then(res => res.json())

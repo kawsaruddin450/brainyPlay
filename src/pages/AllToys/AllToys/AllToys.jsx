@@ -8,13 +8,13 @@ const AllToys = () => {
     const [toys, setToys] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/toys')
+        fetch('https://brainy-play-server.vercel.app/toys')
             .then(res => res.json())
             .then(data => setToys(data));
     }, [])
 
     const handleSorting = dir => {
-        fetch(`http://localhost:5000/toys/sorted?sort=${dir}`)
+        fetch(`https://brainy-play-server.vercel.app/toys/sorted?sort=${dir}`)
         .then(res => res.json())
         .then(data => {
             setToys(data);

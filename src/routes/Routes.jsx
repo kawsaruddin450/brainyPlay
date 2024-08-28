@@ -37,7 +37,7 @@ const router = createBrowserRouter([
             {
                 path: '/toys/:id',
                 element: <PrivateRoutes><ToyDetails></ToyDetails></PrivateRoutes>,
-                loader: ({params}) => fetch(`http://localhost:5000/toys/${params.id}`)
+                loader: ({params}) => fetch(`https://brainy-play-server.vercel.app/toys/${params.id}`)
             },
             {
                 path: '/mytoys',
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
             {
                 path: '/update/:id',
                 element: <PrivateRoutes><UpdateToy></UpdateToy></PrivateRoutes>,
-                loader: ({params}) => fetch(`http://localhost:5000/toys/${params.id}`)
+                loader: ({params}) => fetch(`https://brainy-play-server.vercel.app/toys/${params.id}`)
             },
             {
                 path: '/blogs',

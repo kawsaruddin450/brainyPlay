@@ -24,7 +24,7 @@ const UpdateToy = () => {
             description,
         }
 
-        fetch(`http://localhost:5000/toys/${id}`, {
+        fetch(`https://brainy-play-server.vercel.app/toys/${id}`, {
             method: "PATCH",
             headers: {
                 "content-type": "application/json"
