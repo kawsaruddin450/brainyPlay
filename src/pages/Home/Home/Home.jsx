@@ -1,4 +1,5 @@
 import background from '../../../assets/homebanner.jpg'
+import Gallery from '../Gallery/Gallery';
 import Shop from '../Shop/Shop';
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
                 </div>
             </div>
             <Shop></Shop>
+            <Gallery></Gallery>
         </div>
     );
 };
